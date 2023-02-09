@@ -1,7 +1,7 @@
 const getFakeProducts = () => {
     try {
-        const response = []
+        const response = [];
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
+};
