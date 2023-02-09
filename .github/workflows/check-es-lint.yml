@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - adding-issue
+      
 jobs:
   build:
     runs-on: self-hosted
