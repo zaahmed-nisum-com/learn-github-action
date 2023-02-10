@@ -14,3 +14,5 @@ jobs:
         with:
           compose-file: "docker-compose.yml"
           up-flags: "--build"
+          services: |
+            helloworld2
