@@ -10,6 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-      - name: 'Run docker container'
-        run: pwd
-          # sudo docker-compose up -d
+      - uses: isbang/compose-action@v1.4.1
+        with:
+          compose-file: "docker-compose.yml"
+          up-flags: --build
