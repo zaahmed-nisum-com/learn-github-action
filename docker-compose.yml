@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  server:
+    container_name: server
+    image: server
+    build:
+      context: ./
+    ports:
+      - 3002:3002
