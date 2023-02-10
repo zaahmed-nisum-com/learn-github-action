@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
     res.send({ message: "all good" })
 })
 
-
 app.get('/health-check', (req, res) => {
     res.send({ message: "all good" })
 })
