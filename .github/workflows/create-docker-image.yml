@@ -7,14 +7,12 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
-        - name: Hello world
-        - run: ls
-#       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       
-#       - name: Docker Compose Up
-#         run: ls
+      - name: Docker Compose Up
+        run: ls
 #         shell: sh
 #       - uses: isbang/compose-action@v1.4.1
 #         with:
