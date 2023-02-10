@@ -11,4 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: 'Run docker container'
-        run: "docker compose up"
+        run: |
+          ls && pwd
+          docker compose up
