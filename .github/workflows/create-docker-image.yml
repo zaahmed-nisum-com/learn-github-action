@@ -13,6 +13,7 @@ jobs:
       
       - name: Docker Compose Up
         run: ls
+        shell: sh
 #       - uses: isbang/compose-action@v1.4.1
 #         with:
 #           clean: false
