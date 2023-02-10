@@ -7,10 +7,12 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: isbang/compose-action@v1.4.1
-        with:
-          compose-file: "docker-compose.yml"
-          up-flags: --build
+      - name: Build the stack
+        run: docker-compose up -d
+      # - uses: isbang/compose-action@v1.4.1
+      #   with:
+      #     compose-file: "docker-compose.yml"
+      #     up-flags: --build
